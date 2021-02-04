@@ -369,4 +369,105 @@ Text GLabel 8350 3400 0    50   Input ~ 0
 D+
 Text GLabel 8350 3500 0    50   Input ~ 0
 D-
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J?
+U 1 1 601E80A6
+P 7750 5350
+F 0 "J?" H 7857 6217 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 7857 6126 50  0000 C CNN
+F 2 "" H 7900 5350 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 7900 5350 50  0001 C CNN
+	1    7750 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 601F3A88
+P 7750 6300
+F 0 "#PWR?" H 7750 6050 50  0001 C CNN
+F 1 "GND" H 7755 6127 50  0000 C CNN
+F 2 "" H 7750 6300 50  0001 C CNN
+F 3 "" H 7750 6300 50  0001 C CNN
+	1    7750 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 6250 7750 6300
+Text GLabel 8600 5550 2    50   Input ~ 0
+D+
+Text GLabel 8600 5250 2    50   Input ~ 0
+D-
+$Comp
+L power:+5V #PWR?
+U 1 1 601F53D3
+P 8500 4700
+F 0 "#PWR?" H 8500 4550 50  0001 C CNN
+F 1 "+5V" H 8515 4873 50  0000 C CNN
+F 2 "" H 8500 4700 50  0001 C CNN
+F 3 "" H 8500 4700 50  0001 C CNN
+	1    8500 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 4750 8500 4750
+Wire Wire Line
+	8500 4750 8500 4700
+Wire Wire Line
+	8350 5350 8350 5250
+Wire Wire Line
+	8350 5250 8600 5250
+Connection ~ 8350 5250
+Wire Wire Line
+	8350 5450 8350 5550
+Wire Wire Line
+	8350 5550 8600 5550
+Connection ~ 8350 5550
+$Comp
+L Device:R_Small R?
+U 1 1 601FA629
+P 8700 4850
+F 0 "R?" V 8504 4850 50  0000 C CNN
+F 1 "5.1k" V 8595 4850 50  0000 C CNN
+F 2 "" H 8700 4850 50  0001 C CNN
+F 3 "~" H 8700 4850 50  0001 C CNN
+	1    8700 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 601FAF2C
+P 8700 5150
+F 0 "R?" V 8504 5150 50  0000 C CNN
+F 1 "5.1k" V 8595 5150 50  0000 C CNN
+F 2 "" H 8700 5150 50  0001 C CNN
+F 3 "~" H 8700 5150 50  0001 C CNN
+	1    8700 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 601FB32C
+P 9050 5150
+F 0 "#PWR?" H 9050 4900 50  0001 C CNN
+F 1 "GND" H 9055 4977 50  0000 C CNN
+F 2 "" H 9050 5150 50  0001 C CNN
+F 3 "" H 9050 5150 50  0001 C CNN
+	1    9050 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 4950 8600 4950
+Wire Wire Line
+	8600 4950 8600 4850
+Wire Wire Line
+	8350 5050 8600 5050
+Wire Wire Line
+	8600 5050 8600 5150
+Wire Wire Line
+	8800 4850 9050 4850
+Wire Wire Line
+	9050 4850 9050 5150
+Wire Wire Line
+	8800 5150 9050 5150
+Connection ~ 9050 5150
 $EndSCHEMATC
