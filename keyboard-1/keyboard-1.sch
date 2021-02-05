@@ -14,460 +14,539 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega32U4-AU U?
-U 1 1 601BA168
-P 9800 3900
-F 0 "U?" H 9800 2011 50  0000 C CNN
-F 1 "ATmega32U4-AU" H 9800 1920 50  0000 C CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 9800 3900 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 9800 3900 50  0001 C CNN
-	1    9800 3900
+L keebio:Elite-C U1
+U 1 1 602DAF31
+P 7600 5200
+F 0 "U1" H 7600 6037 60  0000 C CNN
+F 1 "Elite-C" H 7600 5931 60  0000 C CNN
+F 2 "Keebio-Parts:Elite-C" V 8650 2700 60  0001 C CNN
+F 3 "" V 8650 2700 60  0001 C CNN
+	1    7600 5200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9900 2100 9800 2100
-Wire Wire Line
-	9800 2100 9700 2100
-Connection ~ 9800 2100
+Text GLabel 6750 1200 1    50   Input ~ 0
+COL4
+Text GLabel 6500 1200 1    50   Input ~ 0
+COL3
+Text GLabel 4700 1200 1    50   Input ~ 0
+COL2
+Text GLabel 4450 1200 1    50   Input ~ 0
+COL1
+Text GLabel 2650 1200 1    50   Input ~ 0
+COL0
+Text GLabel 6750 5350 0    50   Input ~ 0
+ROW3
+Text GLabel 2150 3500 0    50   Input ~ 0
+ROW2
+Text GLabel 2150 2800 0    50   Input ~ 0
+ROW1
+Text GLabel 2150 2100 0    50   Input ~ 0
+ROW0
 $Comp
-L power:+5V #PWR?
-U 1 1 601BFF85
-P 9800 1900
-F 0 "#PWR?" H 9800 1750 50  0001 C CNN
-F 1 "+5V" H 9815 2073 50  0000 C CNN
-F 2 "" H 9800 1900 50  0001 C CNN
-F 3 "" H 9800 1900 50  0001 C CNN
-	1    9800 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9800 2100 9800 1900
-$Comp
-L power:GND #PWR?
-U 1 1 601C0C68
-P 9300 5700
-F 0 "#PWR?" H 9300 5450 50  0001 C CNN
-F 1 "GND" H 9305 5527 50  0000 C CNN
-F 2 "" H 9300 5700 50  0001 C CNN
-F 3 "" H 9300 5700 50  0001 C CNN
-	1    9300 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9800 5700 9700 5700
-Wire Wire Line
-	9700 5700 9300 5700
-Connection ~ 9700 5700
-$Comp
-L Device:R_Small R?
-U 1 1 601C32C7
-P 10600 4500
-F 0 "R?" V 10404 4500 50  0000 C CNN
-F 1 "10k" V 10495 4500 50  0000 C CNN
-F 2 "" H 10600 4500 50  0001 C CNN
-F 3 "~" H 10600 4500 50  0001 C CNN
-	1    10600 4500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10400 4500 10500 4500
-$Comp
-L power:GND #PWR?
-U 1 1 601C4A60
-P 10900 4500
-F 0 "#PWR?" H 10900 4250 50  0001 C CNN
-F 1 "GND" H 10905 4327 50  0000 C CNN
-F 2 "" H 10900 4500 50  0001 C CNN
-F 3 "" H 10900 4500 50  0001 C CNN
-	1    10900 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10700 4500 10900 4500
-$Comp
-L Device:R_Small R?
-U 1 1 601C4DEF
-P 9000 3500
-F 0 "R?" V 8804 3500 50  0000 C CNN
-F 1 "22" V 8895 3500 50  0000 C CNN
-F 2 "" H 9000 3500 50  0001 C CNN
-F 3 "~" H 9000 3500 50  0001 C CNN
-	1    9000 3500
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 601C5C27
-P 8650 3400
-F 0 "R?" V 8454 3400 50  0000 C CNN
-F 1 "22" V 8545 3400 50  0000 C CNN
-F 2 "" H 8650 3400 50  0001 C CNN
-F 3 "~" H 8650 3400 50  0001 C CNN
-	1    8650 3400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9200 3500 9100 3500
-Wire Wire Line
-	8750 3400 9200 3400
-Wire Wire Line
-	8900 3500 8350 3500
-$Comp
-L Device:C_Small C?
-U 1 1 601C7A17
-P 9000 3900
-F 0 "C?" H 9092 3946 50  0000 L CNN
-F 1 "1uF" H 9092 3855 50  0000 L CNN
-F 2 "" H 9000 3900 50  0001 C CNN
-F 3 "~" H 9000 3900 50  0001 C CNN
-	1    9000 3900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9200 3700 9000 3700
-Wire Wire Line
-	9000 3700 9000 3800
-$Comp
-L power:GND #PWR?
-U 1 1 601C7F5F
-P 9000 4200
-F 0 "#PWR?" H 9000 3950 50  0001 C CNN
-F 1 "GND" H 9005 4027 50  0000 C CNN
-F 2 "" H 9000 4200 50  0001 C CNN
-F 3 "" H 9000 4200 50  0001 C CNN
-	1    9000 4200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9000 4000 9000 4200
-$Comp
-L power:+5V #PWR?
-U 1 1 601C87EA
-P 9000 3200
-F 0 "#PWR?" H 9000 3050 50  0001 C CNN
-F 1 "+5V" H 9015 3373 50  0000 C CNN
-F 2 "" H 9000 3200 50  0001 C CNN
-F 3 "" H 9000 3200 50  0001 C CNN
-	1    9000 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9200 3200 9000 3200
-$Comp
-L power:+5V #PWR?
-U 1 1 601CA037
-P 8050 3800
-F 0 "#PWR?" H 8050 3650 50  0001 C CNN
-F 1 "+5V" H 8065 3973 50  0000 C CNN
-F 2 "" H 8050 3800 50  0001 C CNN
-F 3 "" H 8050 3800 50  0001 C CNN
-	1    8050 3800
+L Switch:SW_Push SW1
+U 1 1 6038A57A
+P 2850 1900
+F 0 "SW1" H 2850 2185 50  0000 C CNN
+F 1 "SW_Push" H 2850 2094 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U" H 2850 2100 50  0001 C CNN
+F 3 "~" H 2850 2100 50  0001 C CNN
+	1    2850 1900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
-U 1 1 601CA733
-P 7850 4000
-F 0 "C?" H 7942 4046 50  0000 L CNN
-F 1 "0.1uF" H 7942 3955 50  0000 L CNN
-F 2 "" H 7850 4000 50  0001 C CNN
-F 3 "~" H 7850 4000 50  0001 C CNN
-	1    7850 4000
+L Switch:SW_Push SW2
+U 1 1 6038C48F
+P 4250 1900
+F 0 "SW2" H 4250 2185 50  0000 C CNN
+F 1 "SW_Push" H 4250 2094 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U" H 4250 2100 50  0001 C CNN
+F 3 "~" H 4250 2100 50  0001 C CNN
+	1    4250 1900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
-U 1 1 601CBFEC
-P 7450 4000
-F 0 "C?" H 7542 4046 50  0000 L CNN
-F 1 "0.1uF" H 7542 3955 50  0000 L CNN
-F 2 "" H 7450 4000 50  0001 C CNN
-F 3 "~" H 7450 4000 50  0001 C CNN
-	1    7450 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 601CC441
-P 8250 4000
-F 0 "C?" H 8342 4046 50  0000 L CNN
-F 1 "0.1uF" H 8342 3955 50  0000 L CNN
-F 2 "" H 8250 4000 50  0001 C CNN
-F 3 "~" H 8250 4000 50  0001 C CNN
-	1    8250 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 601CC984
-P 8650 4000
-F 0 "C?" H 8742 4046 50  0000 L CNN
-F 1 "10uF" H 8742 3955 50  0000 L CNN
-F 2 "" H 8650 4000 50  0001 C CNN
-F 3 "~" H 8650 4000 50  0001 C CNN
-	1    8650 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 601D040A
-P 8050 4200
-F 0 "#PWR?" H 8050 3950 50  0001 C CNN
-F 1 "GND" H 8055 4027 50  0000 C CNN
-F 2 "" H 8050 4200 50  0001 C CNN
-F 3 "" H 8050 4200 50  0001 C CNN
-	1    8050 4200
+L Diode:BAV70 D1
+U 1 1 6038CF05
+P 3550 1900
+F 0 "D1" H 3550 2117 50  0000 C CNN
+F 1 "BAV70" H 3550 2026 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3550 1900 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 3550 1900 50  0001 C CNN
+	1    3550 1900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7850 3900 7450 3900
+	3050 1900 3250 1900
 Wire Wire Line
-	7850 3900 8050 3900
-Connection ~ 7850 3900
-Wire Wire Line
-	8250 3900 8650 3900
-Connection ~ 8250 3900
-Wire Wire Line
-	8050 3800 8050 3900
-Connection ~ 8050 3900
-Wire Wire Line
-	8050 3900 8250 3900
-Wire Wire Line
-	7450 4100 7850 4100
-Wire Wire Line
-	7850 4100 8050 4100
-Connection ~ 7850 4100
-Wire Wire Line
-	8250 4100 8650 4100
-Connection ~ 8250 4100
-Wire Wire Line
-	8050 4200 8050 4100
-Connection ~ 8050 4100
-Wire Wire Line
-	8050 4100 8250 4100
+	3850 1900 4050 1900
 $Comp
-L Device:Crystal_GND24_Small Y?
-U 1 1 601D5081
-P 8750 2700
-F 0 "Y?" V 8704 2844 50  0000 L CNN
-F 1 "16MHz" V 8795 2844 50  0000 L CNN
-F 2 "" H 8750 2700 50  0001 C CNN
-F 3 "~" H 8750 2700 50  0001 C CNN
-	1    8750 2700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9200 2800 8750 2800
-Wire Wire Line
-	9200 2600 8750 2600
-$Comp
-L Device:C_Small C?
-U 1 1 601D7F00
-P 8450 2500
-F 0 "C?" V 8221 2500 50  0000 C CNN
-F 1 "22pF" V 8312 2500 50  0000 C CNN
-F 2 "" H 8450 2500 50  0001 C CNN
-F 3 "~" H 8450 2500 50  0001 C CNN
-	1    8450 2500
-	0    1    1    0   
+L Switch:SW_Push SW3
+U 1 1 603989F7
+P 4900 1900
+F 0 "SW3" H 4900 2185 50  0000 C CNN
+F 1 "SW_Push" H 4900 2094 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U" H 4900 2100 50  0001 C CNN
+F 3 "~" H 4900 2100 50  0001 C CNN
+	1    4900 1900
+	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
-U 1 1 601D92D0
-P 8450 2900
-F 0 "C?" V 8221 2900 50  0000 C CNN
-F 1 "22pF" V 8312 2900 50  0000 C CNN
-F 2 "" H 8450 2900 50  0001 C CNN
-F 3 "~" H 8450 2900 50  0001 C CNN
-	1    8450 2900
-	0    1    1    0   
+L Switch:SW_Push SW4
+U 1 1 603989FD
+P 6300 1900
+F 0 "SW4" H 6300 2185 50  0000 C CNN
+F 1 "SW_Push" H 6300 2094 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U" H 6300 2100 50  0001 C CNN
+F 3 "~" H 6300 2100 50  0001 C CNN
+	1    6300 1900
+	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 601D97F8
-P 8350 3050
-F 0 "#PWR?" H 8350 2800 50  0001 C CNN
-F 1 "GND" H 8355 2877 50  0000 C CNN
-F 2 "" H 8350 3050 50  0001 C CNN
-F 3 "" H 8350 3050 50  0001 C CNN
-	1    8350 3050
+L Diode:BAV70 D2
+U 1 1 60398A03
+P 5600 1900
+F 0 "D2" H 5600 2117 50  0000 C CNN
+F 1 "BAV70" H 5600 2026 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5600 1900 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 5600 1900 50  0001 C CNN
+	1    5600 1900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8350 2500 8350 2900
+	5100 1900 5300 1900
 Wire Wire Line
-	8350 3050 8350 2900
-Connection ~ 8350 2900
-Wire Wire Line
-	8550 2900 8550 2800
-Wire Wire Line
-	8550 2800 8750 2800
-Connection ~ 8750 2800
-Wire Wire Line
-	8550 2500 8550 2600
-Wire Wire Line
-	8550 2600 8750 2600
-Connection ~ 8750 2600
-Wire Wire Line
-	8650 2700 8650 3050
-Wire Wire Line
-	8650 3050 8350 3050
-Connection ~ 8350 3050
-Wire Wire Line
-	8850 2700 8850 3050
-Wire Wire Line
-	8850 3050 8650 3050
-Connection ~ 8650 3050
+	5900 1900 6100 1900
 $Comp
-L Switch:SW_Push SW?
-U 1 1 601DE583
-P 9200 1750
-F 0 "SW?" V 9246 1702 50  0000 R CNN
-F 1 "SW_Push" V 9155 1702 50  0000 R CNN
-F 2 "" H 9200 1950 50  0001 C CNN
-F 3 "~" H 9200 1950 50  0001 C CNN
-	1    9200 1750
+L Switch:SW_Push SW5
+U 1 1 6039B14A
+P 6950 1900
+F 0 "SW5" H 6950 2185 50  0000 C CNN
+F 1 "SW_Push" H 6950 2094 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U" H 6950 2100 50  0001 C CNN
+F 3 "~" H 6950 2100 50  0001 C CNN
+	1    6950 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW6
+U 1 1 6039B150
+P 8350 1900
+F 0 "SW6" H 8350 2185 50  0000 C CNN
+F 1 "SW_Push" H 8350 2094 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U" H 8350 2100 50  0001 C CNN
+F 3 "~" H 8350 2100 50  0001 C CNN
+	1    8350 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAV70 D3
+U 1 1 6039B156
+P 7650 1900
+F 0 "D3" H 7650 2117 50  0000 C CNN
+F 1 "BAV70" H 7650 2026 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7650 1900 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 7650 1900 50  0001 C CNN
+	1    7650 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 1900 7350 1900
+Wire Wire Line
+	7950 1900 8150 1900
+Text GLabel 8550 1200 1    50   Input ~ 0
+COL5
+Wire Wire Line
+	2150 2100 3550 2100
+Wire Wire Line
+	3550 2100 5600 2100
+Connection ~ 3550 2100
+Wire Wire Line
+	5600 2100 7650 2100
+Connection ~ 5600 2100
+Wire Wire Line
+	2650 1900 2650 1200
+Wire Wire Line
+	4450 1900 4450 1200
+Wire Wire Line
+	4700 1200 4700 1900
+Wire Wire Line
+	6500 1900 6500 1200
+Wire Wire Line
+	6750 1200 6750 1900
+Wire Wire Line
+	8550 1900 8550 1200
+$Comp
+L Switch:SW_Push SW7
+U 1 1 603A47AD
+P 2850 2600
+F 0 "SW7" H 2850 2885 50  0000 C CNN
+F 1 "SW_Push" H 2850 2794 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U" H 2850 2800 50  0001 C CNN
+F 3 "~" H 2850 2800 50  0001 C CNN
+	1    2850 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW8
+U 1 1 603A47B3
+P 4250 2600
+F 0 "SW8" H 4250 2885 50  0000 C CNN
+F 1 "SW_Push" H 4250 2794 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U" H 4250 2800 50  0001 C CNN
+F 3 "~" H 4250 2800 50  0001 C CNN
+	1    4250 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAV70 D4
+U 1 1 603A47B9
+P 3550 2600
+F 0 "D4" H 3550 2817 50  0000 C CNN
+F 1 "BAV70" H 3550 2726 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3550 2600 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 3550 2600 50  0001 C CNN
+	1    3550 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2600 3250 2600
+Wire Wire Line
+	3850 2600 4050 2600
+$Comp
+L Switch:SW_Push SW9
+U 1 1 603A47C1
+P 4900 2600
+F 0 "SW9" H 4900 2885 50  0000 C CNN
+F 1 "SW_Push" H 4900 2794 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U" H 4900 2800 50  0001 C CNN
+F 3 "~" H 4900 2800 50  0001 C CNN
+	1    4900 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW10
+U 1 1 603A47C7
+P 6300 2600
+F 0 "SW10" H 6300 2885 50  0000 C CNN
+F 1 "SW_Push" H 6300 2794 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U" H 6300 2800 50  0001 C CNN
+F 3 "~" H 6300 2800 50  0001 C CNN
+	1    6300 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAV70 D5
+U 1 1 603A47CD
+P 5600 2600
+F 0 "D5" H 5600 2817 50  0000 C CNN
+F 1 "BAV70" H 5600 2726 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5600 2600 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 5600 2600 50  0001 C CNN
+	1    5600 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2600 5300 2600
+Wire Wire Line
+	5900 2600 6100 2600
+$Comp
+L Switch:SW_Push SW11
+U 1 1 603A47D5
+P 6950 2600
+F 0 "SW11" H 6950 2885 50  0000 C CNN
+F 1 "SW_Push" H 6950 2794 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U" H 6950 2800 50  0001 C CNN
+F 3 "~" H 6950 2800 50  0001 C CNN
+	1    6950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW12
+U 1 1 603A47DB
+P 8350 2600
+F 0 "SW12" H 8350 2885 50  0000 C CNN
+F 1 "SW_Push" H 8350 2794 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U" H 8350 2800 50  0001 C CNN
+F 3 "~" H 8350 2800 50  0001 C CNN
+	1    8350 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAV70 D6
+U 1 1 603A47E1
+P 7650 2600
+F 0 "D6" H 7650 2817 50  0000 C CNN
+F 1 "BAV70" H 7650 2726 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7650 2600 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 7650 2600 50  0001 C CNN
+	1    7650 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2600 7350 2600
+Wire Wire Line
+	7950 2600 8150 2600
+Wire Wire Line
+	2150 2800 3550 2800
+Wire Wire Line
+	3550 2800 5600 2800
+Connection ~ 3550 2800
+Wire Wire Line
+	5600 2800 7650 2800
+Connection ~ 5600 2800
+Wire Wire Line
+	2650 2600 2650 1900
+Wire Wire Line
+	4450 2600 4450 1900
+Wire Wire Line
+	4700 1900 4700 2600
+Wire Wire Line
+	6500 2600 6500 1900
+Wire Wire Line
+	6750 1900 6750 2600
+Wire Wire Line
+	8550 2600 8550 1900
+$Comp
+L Switch:SW_Push SW13
+U 1 1 603A8EEF
+P 2850 3300
+F 0 "SW13" H 2850 3585 50  0000 C CNN
+F 1 "SW_Push" H 2850 3494 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U" H 2850 3500 50  0001 C CNN
+F 3 "~" H 2850 3500 50  0001 C CNN
+	1    2850 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW14
+U 1 1 603A8EF5
+P 4250 3300
+F 0 "SW14" H 4250 3585 50  0000 C CNN
+F 1 "SW_Push" H 4250 3494 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U" H 4250 3500 50  0001 C CNN
+F 3 "~" H 4250 3500 50  0001 C CNN
+	1    4250 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAV70 D7
+U 1 1 603A8EFB
+P 3550 3300
+F 0 "D7" H 3550 3517 50  0000 C CNN
+F 1 "BAV70" H 3550 3426 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3550 3300 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 3550 3300 50  0001 C CNN
+	1    3550 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3300 3250 3300
+Wire Wire Line
+	3850 3300 4050 3300
+$Comp
+L Switch:SW_Push SW15
+U 1 1 603A8F03
+P 4900 3300
+F 0 "SW15" H 4900 3585 50  0000 C CNN
+F 1 "SW_Push" H 4900 3494 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U" H 4900 3500 50  0001 C CNN
+F 3 "~" H 4900 3500 50  0001 C CNN
+	1    4900 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW16
+U 1 1 603A8F09
+P 6300 3300
+F 0 "SW16" H 6300 3585 50  0000 C CNN
+F 1 "SW_Push" H 6300 3494 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U" H 6300 3500 50  0001 C CNN
+F 3 "~" H 6300 3500 50  0001 C CNN
+	1    6300 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAV70 D8
+U 1 1 603A8F0F
+P 5600 3300
+F 0 "D8" H 5600 3517 50  0000 C CNN
+F 1 "BAV70" H 5600 3426 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5600 3300 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 5600 3300 50  0001 C CNN
+	1    5600 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3300 5300 3300
+Wire Wire Line
+	5900 3300 6100 3300
+$Comp
+L Switch:SW_Push SW17
+U 1 1 603A8F17
+P 6950 3300
+F 0 "SW17" H 6950 3585 50  0000 C CNN
+F 1 "SW_Push" H 6950 3494 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U" H 6950 3500 50  0001 C CNN
+F 3 "~" H 6950 3500 50  0001 C CNN
+	1    6950 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW18
+U 1 1 603A8F1D
+P 8350 3300
+F 0 "SW18" H 8350 3585 50  0000 C CNN
+F 1 "SW_Push" H 8350 3494 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U" H 8350 3500 50  0001 C CNN
+F 3 "~" H 8350 3500 50  0001 C CNN
+	1    8350 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAV70 D9
+U 1 1 603A8F23
+P 7650 3300
+F 0 "D9" H 7650 3517 50  0000 C CNN
+F 1 "BAV70" H 7650 3426 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7650 3300 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 7650 3300 50  0001 C CNN
+	1    7650 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 3300 7350 3300
+Wire Wire Line
+	7950 3300 8150 3300
+Wire Wire Line
+	2150 3500 3550 3500
+Wire Wire Line
+	3550 3500 5600 3500
+Connection ~ 3550 3500
+Wire Wire Line
+	5600 3500 7650 3500
+Connection ~ 5600 3500
+Wire Wire Line
+	2650 3300 2650 2600
+Wire Wire Line
+	4450 3300 4450 2600
+Wire Wire Line
+	4700 2600 4700 3300
+Wire Wire Line
+	6500 3300 6500 2600
+Wire Wire Line
+	6750 2600 6750 3300
+Wire Wire Line
+	8550 3300 8550 2600
+$Comp
+L Switch:SW_Push SW19
+U 1 1 603AEBF7
+P 2850 4000
+F 0 "SW19" H 2850 4285 50  0000 C CNN
+F 1 "SW_Push" H 2850 4194 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U" H 2850 4200 50  0001 C CNN
+F 3 "~" H 2850 4200 50  0001 C CNN
+	1    2850 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW20
+U 1 1 603AEBFD
+P 4250 4000
+F 0 "SW20" H 4250 4285 50  0000 C CNN
+F 1 "SW_Push" H 4250 4194 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U" H 4250 4200 50  0001 C CNN
+F 3 "~" H 4250 4200 50  0001 C CNN
+	1    4250 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAV70 D10
+U 1 1 603AEC03
+P 3550 4000
+F 0 "D10" H 3550 4217 50  0000 C CNN
+F 1 "BAV70" H 3550 4126 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3550 4000 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 3550 4000 50  0001 C CNN
+	1    3550 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 4000 3250 4000
+Wire Wire Line
+	3850 4000 4050 4000
+$Comp
+L Switch:SW_Push SW21
+U 1 1 603AEC0B
+P 4900 4000
+F 0 "SW21" H 4900 4285 50  0000 C CNN
+F 1 "SW_Push" H 4900 4194 50  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U" H 4900 4200 50  0001 C CNN
+F 3 "~" H 4900 4200 50  0001 C CNN
+	1    4900 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 4200 3550 4200
+Wire Wire Line
+	2650 4000 2650 3300
+Wire Wire Line
+	4450 4000 4450 3300
+Wire Wire Line
+	4700 3300 4700 4000
+Connection ~ 3550 4200
+Wire Wire Line
+	3550 4200 5600 4200
+$Comp
+L Device:D_Small D11
+U 1 1 603B40B5
+P 5600 4100
+F 0 "D11" V 5554 4170 50  0000 L CNN
+F 1 "D_Small" V 5645 4170 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 5600 4100 50  0001 C CNN
+F 3 "~" V 5600 4100 50  0001 C CNN
+	1    5600 4100
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 601E0EBB
-P 9400 2100
-F 0 "R?" V 9204 2100 50  0000 C CNN
-F 1 "10k" V 9295 2100 50  0000 C CNN
-F 2 "" H 9400 2100 50  0001 C CNN
-F 3 "~" H 9400 2100 50  0001 C CNN
-	1    9400 2100
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	9200 2400 9200 2100
+	5600 4000 5100 4000
+Text GLabel 6750 5150 0    50   Input ~ 0
+ROW0
+Text GLabel 6750 5050 0    50   Input ~ 0
+ROW1
+Text GLabel 6750 5250 0    50   Input ~ 0
+ROW2
+Text GLabel 2150 4200 0    50   Input ~ 0
+ROW3
 Wire Wire Line
-	9300 2100 9200 2100
-Connection ~ 9200 2100
+	6750 5050 6900 5050
 Wire Wire Line
-	9200 2100 9200 1950
+	6900 5150 6750 5150
 Wire Wire Line
-	9500 2100 9700 2100
-Connection ~ 9700 2100
-$Comp
-L power:GND #PWR?
-U 1 1 601E3300
-P 8900 1550
-F 0 "#PWR?" H 8900 1300 50  0001 C CNN
-F 1 "GND" H 8905 1377 50  0000 C CNN
-F 2 "" H 8900 1550 50  0001 C CNN
-F 3 "" H 8900 1550 50  0001 C CNN
-	1    8900 1550
-	1    0    0    -1  
-$EndComp
+	6900 5250 6750 5250
 Wire Wire Line
-	9200 1550 8900 1550
+	6750 5350 6900 5350
+Text GLabel 8450 5450 2    50   Input ~ 0
+COL0
+Text GLabel 8450 5650 2    50   Input ~ 0
+COL1
+Text GLabel 8450 5550 2    50   Input ~ 0
+COL2
+Text GLabel 6750 5650 0    50   Input ~ 0
+COL3
+Text GLabel 6750 5750 0    50   Input ~ 0
+COL4
+Text GLabel 8450 5750 2    50   Input ~ 0
+COL5
 Wire Wire Line
-	8550 3400 8350 3400
-Text GLabel 8350 3400 0    50   Input ~ 0
-D+
-Text GLabel 8350 3500 0    50   Input ~ 0
-D-
-$Comp
-L Connector:USB_C_Receptacle_USB2.0 J?
-U 1 1 601E80A6
-P 7750 5350
-F 0 "J?" H 7857 6217 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 7857 6126 50  0000 C CNN
-F 2 "" H 7900 5350 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 7900 5350 50  0001 C CNN
-	1    7750 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 601F3A88
-P 7750 6300
-F 0 "#PWR?" H 7750 6050 50  0001 C CNN
-F 1 "GND" H 7755 6127 50  0000 C CNN
-F 2 "" H 7750 6300 50  0001 C CNN
-F 3 "" H 7750 6300 50  0001 C CNN
-	1    7750 6300
-	1    0    0    -1  
-$EndComp
+	8300 5450 8450 5450
 Wire Wire Line
-	7750 6250 7750 6300
-Text GLabel 8600 5550 2    50   Input ~ 0
-D+
-Text GLabel 8600 5250 2    50   Input ~ 0
-D-
-$Comp
-L power:+5V #PWR?
-U 1 1 601F53D3
-P 8500 4700
-F 0 "#PWR?" H 8500 4550 50  0001 C CNN
-F 1 "+5V" H 8515 4873 50  0000 C CNN
-F 2 "" H 8500 4700 50  0001 C CNN
-F 3 "" H 8500 4700 50  0001 C CNN
-	1    8500 4700
-	1    0    0    -1  
-$EndComp
+	8450 5550 8300 5550
 Wire Wire Line
-	8350 4750 8500 4750
+	8300 5650 8450 5650
 Wire Wire Line
-	8500 4750 8500 4700
+	8300 5750 8450 5750
 Wire Wire Line
-	8350 5350 8350 5250
+	6750 5750 6900 5750
 Wire Wire Line
-	8350 5250 8600 5250
-Connection ~ 8350 5250
-Wire Wire Line
-	8350 5450 8350 5550
-Wire Wire Line
-	8350 5550 8600 5550
-Connection ~ 8350 5550
-$Comp
-L Device:R_Small R?
-U 1 1 601FA629
-P 8700 4850
-F 0 "R?" V 8504 4850 50  0000 C CNN
-F 1 "5.1k" V 8595 4850 50  0000 C CNN
-F 2 "" H 8700 4850 50  0001 C CNN
-F 3 "~" H 8700 4850 50  0001 C CNN
-	1    8700 4850
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 601FAF2C
-P 8700 5150
-F 0 "R?" V 8504 5150 50  0000 C CNN
-F 1 "5.1k" V 8595 5150 50  0000 C CNN
-F 2 "" H 8700 5150 50  0001 C CNN
-F 3 "~" H 8700 5150 50  0001 C CNN
-	1    8700 5150
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 601FB32C
-P 9050 5150
-F 0 "#PWR?" H 9050 4900 50  0001 C CNN
-F 1 "GND" H 9055 4977 50  0000 C CNN
-F 2 "" H 9050 5150 50  0001 C CNN
-F 3 "" H 9050 5150 50  0001 C CNN
-	1    9050 5150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8350 4950 8600 4950
-Wire Wire Line
-	8600 4950 8600 4850
-Wire Wire Line
-	8350 5050 8600 5050
-Wire Wire Line
-	8600 5050 8600 5150
-Wire Wire Line
-	8800 4850 9050 4850
-Wire Wire Line
-	9050 4850 9050 5150
-Wire Wire Line
-	8800 5150 9050 5150
-Connection ~ 9050 5150
+	6900 5650 6750 5650
 $EndSCHEMATC
